@@ -5,4 +5,16 @@
   <version>0.0.1</version>
   <name>Open Spotlight Data Exchange</name>
   <description>README.MD</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.11</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.danielbchapman</groupId>
+  		<artifactId>utilities</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
+  </dependencies>
 </project>
