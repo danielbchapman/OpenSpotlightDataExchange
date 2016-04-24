@@ -47,5 +47,5 @@ public abstract class DataExchangeListener
    * @param time the time of the synchronization
    * @return a result object that specifies what happened on this synchronization
    */
-  public abstract SynchronizationResult notifyDataIncoming(SpotlightData data, long time);
+  public abstract SynchronizationResult notifyDataIncoming(SyncAction action, SpotlightData data, long time);
 }

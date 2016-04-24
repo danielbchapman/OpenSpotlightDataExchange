@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.nio.file.FileSystemException;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 import com.danielbchapman.code.NotImplementedException;
 import com.danielbchapman.utility.UtilityXml;
@@ -14,6 +16,8 @@ public class DataExchangeMethods
 {
   public static String APP_STAMP = "Lightwright";
   public static String APP_STAMP_VECTORWORKS = "Vectorworks";
+  
+  public static String ACTION_ENTIRE_PLOT = "Entire Plot";
   
   public static DataMappings defaultMappings()
   {
@@ -41,7 +45,28 @@ public class DataExchangeMethods
   
 	public static void importAction(Document xml, DataMappings mappings, DataExchangeListener listener)
 	{
+	  Node appStamp = UtilityXml.node(xml, "/SLData/InstrumentData/AppStamp");
+	  Node action = UtilityXml.node(xml, "/SLData/InstrumentData/Action");
+	  Node vwVersion = UtilityXml.node(xml, "/SLData/InstrumentData/VWVersion");
+	  Node vwBuild = UtilityXml.node(xml, "/SLData/InstrumentData/VWBuild");
+	  Node rotate2D = UtilityXml.node(xml, "/SLData/InstrumentData/AutoRot2D");
 	  
+	  System.out.println("AppStamp: " + appStamp.getTextContent());
+	  System.out.println("Action: " + action.getTextContent());
+	  System.out.println("VWVersion: " + vwVersion.getTextContent());
+	  System.out.println("VWBuild: " + vwBuild.getTextContent());
+	  System.out.println("AutoRot2D: " + rotate2D.getTextContent());
+	  System.out.println("--------------------");
+	  
+	  NodeList list = UtilityXml.nodeList(xml, "/SLData/InstrumentData/*[starts-with(name(),'UID')]");
+	  if(list == null)
+	    throw new RuntimeException("Unable to import document, the list is null");
+	  
+	  for(int i = 0; i < list.getLength(); i++)
+	  {
+	    Node node = list.item(i);
+	    System.out.println(node.toString());
+	  }
 	}
 	
 	private static void checkPermissions(File file) throws FileNotFoundException, FileSystemException 
