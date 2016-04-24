@@ -39,7 +39,7 @@ public class DataExchangeMethods
     throw new NotImplementedException();
   }
   
-	public static void importAction(Document xml, DataMappings mappings)
+	public static void importAction(Document xml, DataMappings mappings, DataExchangeListener listener)
 	{
 	  
 	}

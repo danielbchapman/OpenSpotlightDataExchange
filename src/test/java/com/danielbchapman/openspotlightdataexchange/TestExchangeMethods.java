@@ -5,6 +5,7 @@ import java.io.File;
 import org.junit.Test;
 import org.w3c.dom.Document;
 
+import com.danielbchapman.openspotlightdataexchange.examples.ExampleLoggingListener;
 import com.danielbchapman.utility.UtilityXml;
 
 public class TestExchangeMethods
@@ -15,6 +16,6 @@ public class TestExchangeMethods
     Document xml = UtilityXml.readDocument(new File("test/turco-test.xml"));
     DataMappings mapping = DataExchangeMethods.defaultMappings();
     
-    DataExchangeMethods.importAction(xml, mapping);
+    DataExchangeMethods.importAction(xml, mapping, new ExampleLoggingListener());
   }
 }
