@@ -6,14 +6,14 @@ import org.junit.Test;
 import org.w3c.dom.Document;
 
 import com.danielbchapman.utility.FileUtil;
-import com.danielbchapman.utility.UtilityXml;
+import com.danielbchapman.utility.Xml;
 
 public class TestImport
 {
   @Test
   public void TestDataSpoolUp()
   {
-    Document xml = UtilityXml.readDocument(new File("test/turco-test.xml"));
+    Document xml = Xml.readDocument(new File("test/turco-test.xml"));
     DataMappings mapping = DataExchangeMethods.defaultMappings();
     
     long start = System.currentTimeMillis();
@@ -25,7 +25,7 @@ public class TestImport
   @Test
   public void TestDataImportMethod()
   {
-    Document xml = UtilityXml.readDocument(new File("test/turco-test.xml"));
+    Document xml = Xml.readDocument(new File("test/turco-test.xml"));
     DataMappings mapping = DataExchangeMethods.defaultMappings();
     
     long start = System.currentTimeMillis();

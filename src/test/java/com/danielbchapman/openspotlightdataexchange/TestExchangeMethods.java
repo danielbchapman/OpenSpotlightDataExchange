@@ -9,7 +9,7 @@ import org.junit.Test;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
-import com.danielbchapman.utility.UtilityXml;
+import com.danielbchapman.utility.Xml;
 
 public class TestExchangeMethods
 {
@@ -38,6 +38,6 @@ public class TestExchangeMethods
      update.set("Position", "STATIC POSITION");
      
      DataExchangeMethods.updateNode(node, original, update, "JUnit", DataExchangeMethods.currentTimestamp(), DataExchangeMethods.defaultMappings());
-     System.out.println(UtilityXml.printXml(node));
+     System.out.println(Xml.printXml(node));
    }
 }

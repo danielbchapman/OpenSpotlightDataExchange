@@ -23,7 +23,7 @@ import org.w3c.dom.NodeList;
 import com.danielbchapman.code.NotImplementedException;
 import com.danielbchapman.utility.Utility;
 import com.danielbchapman.utility.UtilityText;
-import com.danielbchapman.utility.UtilityXml;
+import com.danielbchapman.utility.Xml;
 
 public class DataExchangeMethods
 {
@@ -236,10 +236,10 @@ public class DataExchangeMethods
   
   public static SpotlightData defaultMapper(Node node)
   {
-    String action = UtilityXml.text(node, "Action");
-    String appStamp = UtilityXml.text(node, "AppStamp");
-    String timeStamp = UtilityXml.text(node, "TimeStamp");
-    String uid = UtilityXml.text(node, "UID");
+    String action = Xml.text(node, "Action");
+    String appStamp = Xml.text(node, "AppStamp");
+    String timeStamp = Xml.text(node, "TimeStamp");
+    String uid = Xml.text(node, "UID");
     
     SpotlightData result = new SpotlightData(action, uid, timeStamp, appStamp);
     return result;
@@ -258,11 +258,11 @@ public class DataExchangeMethods
 	  utc.setTime(new Date());
 	  String importTime = new SimpleDateFormat("YYYYMMddHHmmss").format(utc.getTime());
 	  
-	  Node appStamp = UtilityXml.node(xml, "/SLData/InstrumentData/AppStamp");
-	  Node action = UtilityXml.node(xml, "/SLData/InstrumentData/Action");
-	  Node vwVersion = UtilityXml.node(xml, "/SLData/InstrumentData/VWVersion");
-	  Node vwBuild = UtilityXml.node(xml, "/SLData/InstrumentData/VWBuild");
-	  Node rotate2D = UtilityXml.node(xml, "/SLData/InstrumentData/AutoRot2D");
+	  Node appStamp = Xml.node(xml, "/SLData/InstrumentData/AppStamp");
+	  Node action = Xml.node(xml, "/SLData/InstrumentData/Action");
+	  Node vwVersion = Xml.node(xml, "/SLData/InstrumentData/VWVersion");
+	  Node vwBuild = Xml.node(xml, "/SLData/InstrumentData/VWBuild");
+	  Node rotate2D = Xml.node(xml, "/SLData/InstrumentData/AutoRot2D");
 	  
 	  //LOGS
 	  System.out.println("AppStamp: " + appStamp.getTextContent());
@@ -272,7 +272,7 @@ public class DataExchangeMethods
 	  System.out.println("AutoRot2D: " + rotate2D.getTextContent());
 	  System.out.println("--------------------");
 	  
-	  NodeList list = UtilityXml.nodeList(xml, "/SLData/InstrumentData/*[starts-with(name(),'UID')]");
+	  NodeList list = Xml.nodeList(xml, "/SLData/InstrumentData/*[starts-with(name(),'UID')]");
 	  if(list == null)
 	    throw new RuntimeException("Unable to import document, the list is null");
 	  
