@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SLData>
+  <ExportFieldList>
+    <AppStamp>Vectorworks</AppStamp>
+    <TimeStamp>20160426002148</TimeStamp>
+    <Inst_Type>Instrument Type</Inst_Type>
+    <Template2>Gobo 2</Template2>
+    <Template>Gobo 1</Template>
+    <Unit_Number>Unit Number</Unit_Number>
+    <Color>Color</Color>
+    <Circuit_Name>Circuit Name</Circuit_Name>
+    <Circuit_Number>Circuit Number</Circuit_Number>
+    <Dimmer>Dimmer</Dimmer>
+    <Channel>Channel</Channel>
+    <Position>Position</Position>
+    <Wattage>Wattage</Wattage>
+    <Purpose>Purpose</Purpose>
+    <User_Field_1>User Field 1</User_Field_1>
+    <User_Field_2>User Field 2</User_Field_2>
+    <User_Field_3>User Field 3</User_Field_3>
+    <User_Field_4>User Field 4</User_Field_4>
+    <User_Field_5>User Field 5</User_Field_5>
+    <User_Field_6>User Field 6</User_Field_6>
+    <System>System</System>
+    <Mark>Mark</Mark>
+    <Address>Address</Address>
+  </ExportFieldList>
+  <VWFieldList>
+    <AppStamp>Vectorworks</AppStamp>
+    <TimeStamp>20160426002148</TimeStamp>
+    <Instrument_Type>Inst Type</Instrument_Type>
+    <Wattage>Wattage</Wattage>
+    <Purpose>Purpose</Purpose>
+    <Position>Position</Position>
+    <Unit_Number>Unit Number</Unit_Number>
+    <Color>Color</Color>
+    <Dimmer>Dimmer</Dimmer>
+    <Channel>Channel</Channel>
+    <Address>Address</Address>
+    <Universe>Universe</Universe>
+    <U_Address>U Dimmer</U_Address>
+    <Circuit_Number>Circuit Number</Circuit_Number>
+    <Circuit_Name>Circuit Name</Circuit_Name>
+    <System>System</System>
+    <User_Field_1>User Field 1</User_Field_1>
+    <User_Field_2>User Field 2</User_Field_2>
+    <User_Field_3>User Field 3</User_Field_3>
+    <User_Field_4>User Field 4</User_Field_4>
+    <User_Field_5>User Field 5</User_Field_5>
+    <User_Field_6>User Field 6</User_Field_6>
+    <Num_Channels>Num Channels</Num_Channels>
+    <Frame_Size>Frame Size</Frame_Size>
+    <Field_Angle>Field Angle</Field_Angle>
+    <Field_Angle_2>Field Angle 2</Field_Angle_2>
+    <Beam_Angle>Beam Angle</Beam_Angle>
+    <Beam_Angle_2>Beam Angle 2</Beam_Angle_2>
+    <Weight>Weight</Weight>
+    <Gobo_1>Template</Gobo_1>
+    <Gobo_1_Rotation>TemplateRot1</Gobo_1_Rotation>
+    <Gobo_2>Template2</Gobo_2>
+    <Gobo_2_Rotation>TemplateRot2</Gobo_2_Rotation>
+    <Mark>Mark</Mark>
+    <Use_Vertical_Beam>Use Vertical Beam</Use_Vertical_Beam>
+    <Lamp_Rotation_Angle>Lamp Rotation Angle</Lamp_Rotation_Angle>
+    <Focus>Focus</Focus>
+    <X_Rotation>xRot</X_Rotation>
+    <Y_Rotation>yRot</Y_Rotation>
+    <FixtureID>FixtureID</FixtureID>
+  </VWFieldList>
+  <InstrumentData>
+    <AppStamp>Vectorworks</AppStamp>
+    <VWVersion>2103</VWVersion>
+    <VWBuild>301288</VWBuild>
+    <AutoRot2D>False</AutoRot2D>
+    </InstrumentData>
+  <UniverseSettings>
+    <AppStamp>Vectorworks</AppStamp>
+    <UniverseEnabled>False</UniverseEnabled>
+  </UniverseSettings>
+</SLData>

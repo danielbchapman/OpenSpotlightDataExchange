@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SLData>
+
+  <ExportFieldList>
+    <AppStamp>Vectorworks</AppStamp>
+    <TimeStamp>20160426000130</TimeStamp>
+    <Inst_Type>Inst Type</Inst_Type>
+    <Template2>Template2</Template2>
+    <Template>Template</Template>
+    <Unit_Number>Unit Number</Unit_Number>
+    <Color>Color</Color>
+    <Circuit_Name>Circuit Name</Circuit_Name>
+    <Circuit_Number>Circuit Number</Circuit_Number>
+    <Dimmer>Dimmer</Dimmer>
+    <Channel>Channel</Channel>
+    <Position>Position</Position>
+    <Wattage>Wattage</Wattage>
+    <Purpose>Purpose</Purpose>
+    <User_Field_1>User Field 1</User_Field_1>
+    <User_Field_2>User Field 2</User_Field_2>
+    <User_Field_3>User Field 3</User_Field_3>
+    <User_Field_4>User Field 4</User_Field_4>
+    <User_Field_5>User Field 5</User_Field_5>
+    <User_Field_6>User Field 6</User_Field_6>
+    <System>System</System>
+    <Mark>Mark</Mark>
+    <Address>Address</Address>
+  </ExportFieldList>
+
+  <VWFieldList>
+    <AppStamp>Vectorworks</AppStamp>
+    <TimeStamp>20160426000130</TimeStamp>
+    <Instrument_Type>Inst Type</Instrument_Type>
+    <Wattage>Wattage</Wattage>
+    <Purpose>Purpose</Purpose>
+    <Position>Position</Position>
+    <Unit_Number>Unit Number</Unit_Number>
+    <Color>Color</Color>
+    <Dimmer>Dimmer</Dimmer>
+    <Channel>Channel</Channel>
+    <Address>Address</Address>
+    <Universe>Universe</Universe>
+    <U_Address>U Dimmer</U_Address>
+    <Circuit_Number>Circuit Number</Circuit_Number>
+    <Circuit_Name>Circuit Name</Circuit_Name>
+    <System>System</System>
+    <User_Field_1>User Field 1</User_Field_1>
+    <User_Field_2>User Field 2</User_Field_2>
+    <User_Field_3>User Field 3</User_Field_3>
+    <User_Field_4>User Field 4</User_Field_4>
+    <User_Field_5>User Field 5</User_Field_5>
+    <User_Field_6>User Field 6</User_Field_6>
+    <Num_Channels>Num Channels</Num_Channels>
+    <Frame_Size>Frame Size</Frame_Size>
+    <Field_Angle>Field Angle</Field_Angle>
+    <Field_Angle_2>Field Angle 2</Field_Angle_2>
+    <Beam_Angle>Beam Angle</Beam_Angle>
+    <Beam_Angle_2>Beam Angle 2</Beam_Angle_2>
+    <Weight>Weight</Weight>
+    <Gobo_1>Template</Gobo_1>
+    <Gobo_1_Rotation>TemplateRot1</Gobo_1_Rotation>
+    <Gobo_2>Template2</Gobo_2>
+    <Gobo_2_Rotation>TemplateRot2</Gobo_2_Rotation>
+    <Mark>Mark</Mark>
+    <Use_Vertical_Beam>Use Vertical Beam</Use_Vertical_Beam>
+    <Lamp_Rotation_Angle>Lamp Rotation Angle</Lamp_Rotation_Angle>
+    <Focus>Focus</Focus>
+    <X_Rotation>xRot</X_Rotation>
+    <Y_Rotation>yRot</Y_Rotation>
+    <FixtureID>FixtureID</FixtureID>
+  </VWFieldList>
+
+  <InstrumentData>
+    <Action>Entire Plot</Action>
+    <AppStamp>Vectorworks</AppStamp>
+    <VWVersion>2103</VWVersion>
+    <VWBuild>301288</VWBuild>
+    <AutoRot2D>False</AutoRot2D>
+    <UID_1000_1_1_0_0>
+      <Action>Update</Action>
+      <TimeStamp>20160426000130</TimeStamp>
+      <AppStamp>Vectorworks</AppStamp>
+      <UID>1000.1.1.0.0</UID>
+      <Lightwright_ID></Lightwright_ID>
+      <Use_Legend></Use_Legend>
+      <Device_Type>Light</Device_Type>
+      <Symbol_Name>Light Instr ETC Source 4 PAR  NSP</Symbol_Name>
+      <Focus></Focus>
+      <Class>None</Class>
+      <Layer>Design Layer-1</Layer>
+      <Accessories></Accessories>
+      <Inst_Type>S4 PAR NSP</Inst_Type>
+      <Template2></Template2>
+      <Template></Template>
+      <Unit_Number>2</Unit_Number>
+      <Color>2</Color>
+      <Circuit_Name>2</Circuit_Name>
+      <Circuit_Number>2</Circuit_Number>
+      <Dimmer>2</Dimmer>
+      <Channel>2</Channel>
+      <Position>POS 2</Position>
+      <Wattage>575W</Wattage>
+      <Purpose>2 Purpose</Purpose>
+      <User_Field_1></User_Field_1>
+      <User_Field_2></User_Field_2>
+      <User_Field_3></User_Field_3>
+      <User_Field_4></User_Field_4>
+      <User_Field_5></User_Field_5>
+      <User_Field_6></User_Field_6>
+      <System>A</System>
+      <Mark></Mark>
+      <Address>2</Address>
+      <X_Location_mm>-79.375000</X_Location_mm>
+      <Y_Location_mm>-3.175000</Y_Location_mm>
+      <Z_Location_mm>0.000000</Z_Location_mm>
+      <Rotation>0.000000</Rotation>
+    </UID_1000_1_1_0_0>
+    <UID_1001_1_1_0_0>
+      <Action>Update</Action>
+      <TimeStamp>20160426000130</TimeStamp>
+      <AppStamp>Vectorworks</AppStamp>
+      <UID>1001.1.1.0.0</UID>
+      <Lightwright_ID></Lightwright_ID>
+      <Use_Legend></Use_Legend>
+      <Device_Type>Light</Device_Type>
+      <Symbol_Name>Light Instr ETC Source 4 PAR  VNSP</Symbol_Name>
+      <Focus></Focus>
+      <Class>None</Class>
+      <Layer>Design Layer-1</Layer>
+      <Accessories></Accessories>
+      <Inst_Type>S4 PAR VNSP</Inst_Type>
+      <Template2></Template2>
+      <Template></Template>
+      <Unit_Number>3</Unit_Number>
+      <Color>3</Color>
+      <Circuit_Name>3</Circuit_Name>
+      <Circuit_Number>3</Circuit_Number>
+      <Dimmer>3</Dimmer>
+      <Channel>3</Channel>
+      <Position>3 POS</Position>
+      <Wattage>575W</Wattage>
+      <Purpose>Purpose 3</Purpose>
+      <User_Field_1></User_Field_1>
+      <User_Field_2></User_Field_2>
+      <User_Field_3></User_Field_3>
+      <User_Field_4></User_Field_4>
+      <User_Field_5></User_Field_5>
+      <User_Field_6></User_Field_6>
+      <System>A</System>
+      <Mark></Mark>
+      <Address>3</Address>
+      <X_Location_mm>206.375000</X_Location_mm>
+      <Y_Location_mm>-3.175000</Y_Location_mm>
+      <Z_Location_mm>0.000000</Z_Location_mm>
+      <Rotation>0.000000</Rotation>
+    </UID_1001_1_1_0_0>
+    <UID_1002_1_1_0_0>
+      <Action>Update</Action>
+      <TimeStamp>20160426000130</TimeStamp>
+      <AppStamp>Vectorworks</AppStamp>
+      <UID>1002.1.1.0.0</UID>
+      <Lightwright_ID></Lightwright_ID>
+      <Use_Legend></Use_Legend>
+      <Device_Type>Light</Device_Type>
+      <Symbol_Name>Light Instr ETC Source 4 PAR MFL</Symbol_Name>
+      <Focus></Focus>
+      <Class>None</Class>
+      <Layer>Design Layer-1</Layer>
+      <Accessories></Accessories>
+      <Inst_Type>S4 PAR MFL</Inst_Type>
+      <Template2></Template2>
+      <Template></Template>
+      <Unit_Number>1</Unit_Number>
+      <Color>1</Color>
+      <Circuit_Name>1</Circuit_Name>
+      <Circuit_Number>1</Circuit_Number>
+      <Dimmer>1</Dimmer>
+      <Channel>1</Channel>
+      <Position>POS 1</Position>
+      <Wattage>575W</Wattage>
+      <Purpose>1 Purpose</Purpose>
+      <User_Field_1></User_Field_1>
+      <User_Field_2></User_Field_2>
+      <User_Field_3></User_Field_3>
+      <User_Field_4></User_Field_4>
+      <User_Field_5></User_Field_5>
+      <User_Field_6></User_Field_6>
+      <System>A</System>
+      <Mark></Mark>
+      <Address>1</Address>
+      <X_Location_mm>57.150000</X_Location_mm>
+      <Y_Location_mm>215.900000</Y_Location_mm>
+      <Z_Location_mm>0.000000</Z_Location_mm>
+      <Rotation>0.000000</Rotation>
+    </UID_1002_1_1_0_0>
+  </InstrumentData>
+
+  <UniverseSettings>
+    <AppStamp>Vectorworks</AppStamp>
+    <UniverseEnabled>False</UniverseEnabled>
+  </UniverseSettings>
+
+</SLData>
