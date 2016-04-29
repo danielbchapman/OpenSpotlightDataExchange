@@ -1,9 +1,9 @@
 package com.danielbchapman.openspotlightdataexchange;
 
-import org.w3c.dom.Node;
-
 import lombok.Getter;
 import lombok.Setter;
+
+import org.w3c.dom.Node;
 
 /**
  * The DataExchangeListener is a class that notifies an application of synchronization.
@@ -21,7 +21,9 @@ public class DataExchangeProcessor
   @Setter
   private DataMappings mappings;
   
-  
+  @Getter
+  @Setter
+  private String appStamp = "JUnit";
   /**
    * Constructs a Data Exchange Listener with default mappings.
    * 
@@ -50,15 +52,19 @@ public class DataExchangeProcessor
    */
   public ErrorCode execute(Node node)
   {
-    SpotlightData data = importSLData(node);
-    SpotlightData post = process(data, node);
+    SpotlightData data = getNodeAsSpotlightData(node);
     
-    if(post != null)
+    //Process this node
+    SpotlightData out = data.copyValues();
+    if(out.get("UnitNumber").equals("1")) //CANARY FOR TESTING
+      out.set("Purpose", "Unit #1 UPDATED");
+    
+    if(out != null)
     {
-      return DataExchangeMethods.updateNode(node, data, post, "JUnit", DataExchangeMethods.currentTimestamp(), mappings);
+      return DataExchangeMethods.updateNode(node, data, out, "JUnit", DataExchangeMethods.currentTimestamp(), mappings);
     }
     else
-      return ErrorCode.FAILURE; 
+      return ErrorCode.FAILURE; //This will eventually be checked.
     
   }
   /**
@@ -67,30 +73,8 @@ public class DataExchangeProcessor
    * @param node the node to process
    * @return this method imports
    */
-  public SpotlightData importSLData(Node node)
+  public SpotlightData getNodeAsSpotlightData(Node node)
   {
-    return DataExchangeMethods.speedyImporter(node, DataExchangeMethods.currentTimestamp(), mappings);
-  }
-  
-  /**
-   * The process method does the actual mapping, if you have a custom
-   * implementation this is the method you want to override. The Node is
-   * provided as a courtesy to the signature, but is actually not needed
-   * for this particular implementation. This could occur entirely
-   * in the execute method.
-   *  
-   * 
-   * @param value the SpotlightData to process
-   * @param node the node that was used to obtain the data if needed
-   * @return A new SpotlightDataObject indicating the changes to this 
-   * node after processing
-   */
-  public SpotlightData process(SpotlightData value, Node node)
-  {
-    //Just append a 1 to purpose each time this runs.
-    SpotlightData out = value.copyValues();
-    if(out.get("UnitNumber").equals("1"))
-      out.set("Purpose", "Unit #1 UPDATED");
-    return out;
+    return DataExchangeMethods.speedyImporter(node, mappings);
   }
 }

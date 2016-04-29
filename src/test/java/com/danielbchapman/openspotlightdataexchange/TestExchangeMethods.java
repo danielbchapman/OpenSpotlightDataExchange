@@ -2,6 +2,8 @@ package com.danielbchapman.openspotlightdataexchange;
 
 import java.util.function.BiFunction;
 
+import javax.swing.text.html.HTMLDocument.HTMLReader.SpecialAction;
+import javax.xml.crypto.Data;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
@@ -39,5 +41,25 @@ public class TestExchangeMethods
      
      DataExchangeMethods.updateNode(node, original, update, "JUnit", DataExchangeMethods.currentTimestamp(), DataExchangeMethods.defaultMappings());
      System.out.println(Xml.printXml(node));
+   }
+   
+   @Test
+   public void TestNodeUpdateUtilities()
+   {
+     Document doc = Xml.createDomDocument();
+     String uid = "1001.9.9.9.9";
+     Node instruments = DataExchangeMethods.createTestData(doc, uid);
+     
+     System.out.println(Xml.printXml(instruments));
+     DataMappings map = DataExchangeMethods.defaultMappings();
+     Node tester = DataExchangeMethods.findByUID(doc, uid);
+     SpotlightData update = DataExchangeMethods.speedyImporter(tester, DataExchangeMethods.defaultMappings());
+     update.set("Purpose", "Test Purpose");
+     
+     DataExchangeMethods.updateData(doc, update, map, DataExchangeMethods.APP_STAMP, uid);
+     System.out.println("-------------------------------");
+     System.out.println(Xml.printXml(tester));
+//     
+     
    }
 }
