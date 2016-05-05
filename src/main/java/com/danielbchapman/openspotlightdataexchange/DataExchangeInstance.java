@@ -8,6 +8,7 @@ import java.nio.file.StandardWatchEventKinds;
 import java.nio.file.WatchEvent;
 import java.nio.file.WatchKey;
 import java.nio.file.WatchService;
+import java.util.function.Consumer;
 
 import com.danielbchapman.utility.Xml;
 
@@ -32,7 +33,7 @@ public class DataExchangeInstance
     {
       DataExchangeInstance inst = new DataExchangeInstance(DataExchangeMethods.defaultMappings(), new File("volatile/test.xml"));
       inst.registerKillThread(120000);
-      inst.start();
+      inst.start((f)->{});
     }
     catch (IOException e)
     {
@@ -84,13 +85,20 @@ public class DataExchangeInstance
     isRunning = false;
   }
   
-  public void start()
+  /**
+   * <JavaDoc>
+   * @param onFileChanged <Return Description>  
+   * 
+   */
+  public void start(final Consumer<File> onFileChanged)
   {
 
       isRunning = true;
       System.out.println("Registering service");
       Path dir = path.getParent();
       System.out.println(dir.toAbsolutePath());
+      //Fire before we start
+      onFileChanged.accept(file);
       while(isRunning)
       {
         try
@@ -106,7 +114,7 @@ public class DataExchangeInstance
             }
             else
             {
-              DataExchangeMethods.importAction(Xml.readDocument(file), new DataExchangeProcessor());
+              onFileChanged.accept(file);
             }
           }
         }

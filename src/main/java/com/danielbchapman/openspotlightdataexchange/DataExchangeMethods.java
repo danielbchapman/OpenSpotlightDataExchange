@@ -16,6 +16,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import com.danielbchapman.code.Pair;
 import com.danielbchapman.utility.Utility;
 import com.danielbchapman.utility.Xml;
 
@@ -201,10 +202,10 @@ public class DataExchangeMethods
 	  for(int i = 0; i < list.getLength(); i++)
 	  {
 	    Node node = list.item(i);
-	    ErrorCode c = processor.execute(node);
+	    Pair<ErrorCode, SpotlightData> c = processor.execute(node);
 	    
-	    if(c != ErrorCode.SUCCESS)
-	      code = c;
+	    if(c.getOne() != ErrorCode.SUCCESS)
+	      code = c.getOne();
 	  }
 	  
 	  //System.out.println(UtilityXml.printXml(xml));
